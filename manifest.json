@@ -1,0 +1,21 @@
+{
+  "name": "Search results filter",
+  "description": "Filters search results to help you find what you actually want",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://duckduckgo.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://duckduckgo.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Search results filter"
+  }
+}
