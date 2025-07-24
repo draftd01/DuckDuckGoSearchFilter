@@ -8,6 +8,7 @@ showResultsBtn.style.left = "50%"
 showResultsBtn.style.transform = "translate(-50%)"
 showResultsBtn.style.borderRadius = "1.4rem"
 showResultsBtn.style.background = "dimgray"
+showResultsBtn.style.cursor = "pointer"
 
 function showResults(website){
 	if(resultsHidden){
